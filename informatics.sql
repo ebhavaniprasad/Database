@@ -49,7 +49,7 @@ FROM employee
 WHERE age < 40;
 
 /* List names of the employees whose experience is greater than 4 years and age less than 40 years. */
-SELECT firstname, lastname
+SELECT CONCAT(firstname, lastname) AS 'name'
 FROM employee
 WHERE experience > 4 AND age < 40;
 
